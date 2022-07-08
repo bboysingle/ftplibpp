@@ -62,7 +62,8 @@ typedef struct x509_st X509;
 #include <sys/types.h>
 
 #ifndef _FTPLIB_SSL_CLIENT_METHOD_
-#define _FTPLIB_SSL_CLIENT_METHOD_ TLSv1_2_client_method
+//#define _FTPLIB_SSL_CLIENT_METHOD_ TLSv1_2_client_method
+#define _FTPLIB_SSL_CLIENT_METHOD_ TLS_client_method   //TLSv1_2_client_method is deprecated in new openssh
 #endif
 
 using namespace std;
